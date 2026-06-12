@@ -25,6 +25,20 @@ const projects = [
   },
 ];
 
+const skills = [
+  "JavaScript", "TypeScript", "React", "Node.js",
+  "Python", "MongoDB", "PostgreSQL", "Git",
+  "Docker", "GraphQL", "REST APIs", "TailwindCSS",
+];
+
+const skillsList = document.getElementById("skills-list");
+skills.forEach((s) => {
+  const tag = document.createElement("span");
+  tag.className = "skill-tag";
+  tag.textContent = s;
+  skillsList.appendChild(tag);
+});
+
 const grid = document.getElementById("project-grid");
 
 projects.forEach((p) => {
